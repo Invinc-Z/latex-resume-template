@@ -1,0 +1,176 @@
+% !TEX TS-program = xelatex
+% !TeX encoding = UTF-8
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{color}  % 改变背景颜色
+\definecolor{shadecolor}{rgb}{0.92,0.92,0.92} % 灰色
+\usepackage{hyperref} % 网址超链接
+\usepackage{multirow}
+\usepackage{setspace}
+%\setstretch{1.2} % 设置全文行距
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+% ============================= 联系方式左右结构 ============================
+%\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+%\multirow[c]{3}{*}[-0.05in]{\Huge\kaishu 姓名}
+%    & \email{zhuangzhuangzhang97@gmail.com} \\
+%    & \phone{188-8888-8888} \\
+%    & \github{https://github.com/Invinc-Z} \\
+%\end{tabular*}
+
+% ============================= 联系方式左右结构带照片 ============================
+%\begin{tabular*}{\textwidth}{l @{\hspace{6.8cm}} r|l}
+%\multirow[c]{3}{*}[-0.05in]{\Huge\kaishu 姓名}
+%&  \multirow{3}{*}{
+%    \includegraphics[width=1.5cm]{avatar}
+%}
+%& \email{zhuangzhuangzhang97@gmail.com} \\
+%& & \phone{188-8888-8888} \\
+%& & \github{https://github.com/Invinc-Z} \\
+%\end{tabular*}
+
+% ============================= 联系方式上下结构 ============================
+\name{\Huge  \kaishu 姓名}
+\basicInfo{
+  \email{zhuangzhuangzhang97@gmail.com} \textperiodcentered\ 
+  \phone{188-8888-8888} \textperiodcentered\ 
+  \github{https://github.com/Invinc-Z}
+}
+  
+% ============================= 个人基本信息 ================================
+\section{\faAddressCard  \fangzheng \ 基本信息}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} c c c c c}
+    性别：男 & 年龄：22岁 & 现居地：苏州 & 工作年限：两年半 & 求职意向：C++ 软件开发工程师 \\
+\end{tabular*}
+
+
+% ============================= 教育背景 ====================================
+\section{\faGraduationCap \fangzheng \ 教育背景}
+\datedsubsection{\textbf{XXXXXX大学}~~ \ 硕士, 信息与通信工程, 排名: \nth{1}/50}{2019.09 -- 2022.06}
+\datedsubsection{\textbf{XXXXXX大学}~~ \ 学士, 通信工程, 排名: 10\%}{2015.09 -- 2019.06}
+
+% ============================= 专业技能 ====================================
+\section{\faHammer \fangzheng \ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\textbf{编程语言}：
+\begin{itemize}[parsep=0.5ex]
+  \item C++（熟练）：掌握面向对象编程（封装/继承/多态）、熟悉STL容器使用、熟悉几种常见的设计模式、智能指针、多线程、模板编程
+  \item C（熟练）：熟悉内存管理、指针操作、文件I/O、数据结构及算法实现、多线程/进程、网络编程
+  \item Python（熟练）: ...
+\end{itemize}
+
+\textbf{系统与工具}： 
+\begin{itemize}[parsep=0.5ex]
+  \item 熟练掌握Linux基本命令、熟悉Vim、Makefile及GCC/GDB的使用
+  \item 熟悉Linux进程管理、多进程/线程、进程池和线程池、IO多路复用模型
+  \item 掌握socket网络编程、熟悉TCP/IP协议
+  \item 了解SVN、Git版本控制工具的基本使用
+\end{itemize} 
+
+\textbf{数据库与缓存}：
+\begin{itemize}[parsep=0.5ex]
+  \item MySQL（熟练）：SQL优化、索引设计、事务管理
+  \item Redis（熟练）：数据结构应用（String/Hash/List）、持久化、高并发场景
+\end{itemize}
+
+\textbf{其他}：    
+\begin{itemize}[parsep=0.5ex]
+  \item LaTeX（熟练）：掌握论文排版、技术文档编写、能进行模板设计和修改、环境配置和编译报错解决
+  \item Markdown（熟练）：熟练使用Markdown编写技术文档、博客笔记，熟悉Pandoc格式转换
+\end{itemize}
+
+% ============================= 工作经历 ====================================
+\section{\faUsers \fangzheng \ 工作经历}
+
+\datedsubsection{\textbf{XX有限公司}~/~软件工程师}{2022.08--2025.12}
+\datedsubsubsection{A项目}{2024.01--2025.12}
+\begin{enumerate}[parsep=0.5ex]
+	\item STAR 法则是一种常用来组织回答、复盘经历或写面试回答的结构化方法，由四部分组成：
+	\item \textbf{S — Situation（情境）}：说明事件发生的背景是什么
+	\item \textbf{T — Task（任务）}：你当时承担的任务或目标是什么
+\end{enumerate}
+
+\datedsubsubsection{B项目}{2022.08--2023.12}
+\begin{enumerate}[parsep=0.5ex]
+	\item \textbf{A — Action（行动）}：你具体采取了哪些行动或策略
+	\item \textbf{R — Result（结果）}：最终取得了什么结果（最好量化）
+	\item 用“背景—任务—行动—结果”的顺序，把经历讲得清晰、有逻辑、有亮点
+\end{enumerate}
+
+\section{\faLightbulb \fangzheng \ 项目经历}
+\datedsubsection{\textbf{面向XXX方法研究}~/~算法负责人}{2020.02--2022.05}
+\begin{enumerate}[parsep=0.5ex]
+		\item 
+		\item 
+		\item 
+\end{enumerate}
+
+% ============================= 实习经历 ====================================
+%\section{\faUserTie \fangzheng \ 实习经历}
+
+% ============================= 校内经历 ====================================
+%\section{\faSchool \fangzheng \ 校内经历}
+
+% ============================= 科研成果 ====================================
+\section{\faBook \fangzheng \ 科研成果}
+% increase linespacing [parsep=0.5ex]
+\begin{enumerate}[parsep=0.5ex]
+	\renewcommand{\labelenumi}{[\theenumi]}
+	\item XXXXXXX XXXXXXXXXXX XXX  XXXXX XXXXXXXXXXXXXXX[J]. XXXXXXX.\quad \textcolor[gray]{0.5}{第一作者}
+	\item 一种XXXXXXXXXXXXXXXXX的XX方法[P]. 江苏省: ZL 2021 1 0XXXXXX.5
+	\item METHOD FOR XXXXXX XXXX XXXX AND XXXX XXXX IN XXXXX-XXXXX XXXXXX XXXXX.\quad PCT国际专利\quad 公开号：WO/2023/XXXXXX
+	\item 一种基于XXXX的XXXXXXXXX度量方法[P]. 江苏省:ZL 2021 1 0XXXXXX.7
+	\item 基于XXXX和XXXXXX的XX系统[J]. 计算机XXXXX.
+\end{enumerate}
+
+% ============================= 奖项荣誉 ====================================
+\section{\faTrophy \fangzheng \ 奖项荣誉}
+\datedline{2021--2022年XXXXXXXX优秀毕业研究生}{2022--06}
+\datedline{2021--2022年XXXXXXXX三好研究生}{2022--06}
+
+% ============================= 自我评价 ====================================
+\section{\faPerson \fangzheng \ 自我评价}
+% increase linespacing [parsep=0.5ex]
+\begin{enumerate}[parsep=0.5ex]
+	\item 
+	\item 
+	\item
+\end{enumerate}
+
+% ============================= 兴趣爱好 ====================================
+\section{\faIcons \fangzheng \ 兴趣爱好}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+	\item \textbf{唱}：大家好，我是练习时长两年半的个人练习生Invinc-Z，喜欢唱。
+	
+	\item \textbf{跳}：大家好，我是练习时长两年半的个人练习生Invinc-Z，喜欢跳。
+	
+	\item \textbf{rap}：大家好，我是练习时长两年半的个人练习生Invinc-Z，喜欢rap。
+	
+	\item \textbf{篮球}：大家好，我是练习时长两年半的个人练习生Invinc-Z，喜欢篮球。
+\end{itemize}
+
+% ============================= 其他 ====================================
+\section{\faInfo \fangzheng \ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 技术博客: \url{https://invinc-z.com/} \quad \url{https://www.cnblogs.com/Invinc-Z}
+  \item GitHub: \url{https://github.com/Invinc-Z}
+  \item 资格证书：...
+  \item ...
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+
+\end{document}
